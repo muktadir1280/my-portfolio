@@ -1,69 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- daisyUI CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- css -->
-    <link rel="stylesheet" href="style.css" />
-    <title>Welcome</title>
-  </head>
 
-  <body class="bg-slate-900 text-gray-100">
-    <nav class="nav-container max-w-5xl mx-auto pt-4">
-      <div class="navbar bg-slate-900">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-            >
-              <li><a>Home</a></li>
-              <li><a>About</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Contact</a></li>
-            </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- daisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="style.css" />
+  <title>Home | Muktadir Rahman</title>
+</head>
+
+<body class="bg-slate-900 text-gray-100 h-screen px-4 lg:px-0">
+  <!-- nav section start here -->
+  <nav class="nav-container max-w-5xl mx-auto pt-4">
+    <div class="navbar bg-slate-900 p-0">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
           </div>
-          <a class="btn btn-ghost text-xl"
-            ><span class="text-[#30bcec] text-2xl font-bold">
-              < / Muktadir>
-            </span></a
-          >
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
             <li><a>Home</a></li>
             <li><a>About</a></li>
             <li><a>Portfolio</a></li>
             <li><a>Contact</a></li>
           </ul>
         </div>
-        <div class="navbar-end">
-          <a class="btn btn-cv bg-[#30bcec] text-black text-xl">Download CV</a>
-        </div>
+        <a class="btn btn-ghost text-xl p-0"><span class="text-[#30bcec] text-2xl font-bold ">
+            < / Muktadir>
+          </span></a>
       </div>
-    </nav>
-  </body>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn btn-cv bg-[#30bcec] text-black text-xl">Download CV</a>
+      </div>
+    </div>
+  </nav>
+  <!-- nav section ends here -->
+  <!-- main section start here -->
+  <main class="main-container max-w-5xl mx-auto">
+    <div
+      class="hero-container lg:flex lg:flex-row lg:justify-between flex flex-col items-center justify-center lg:gap-10">
+      <div class="left-side">
+        <h2 class="lg:text-3xl font-bold mt-20 text-2xl">
+          Hi there, I'm <span class="text-[#30bcec]">Muktadir Rahman</span> 👋
+        </h2>
+        <p class="mt-10 text-xl font-normal">
+          As a recent Computer Science and Engineering graduate, I am
+          enthusiastic about commencing my professional journey within a
+          dynamic organization that champions innovation and provides a
+          platform for ongoing career advancement. I am dedicated to
+          leveraging my technical understanding and adept problem-solving
+          abilities to impact the company's success while perpetually honing
+          my expertise in this ever-evolving field.
+        </p>
+      </div>
+      <img class="h-96 border border-blue-200 rounded-lg mt-12" src="./images/main.jpg" alt="Muktadir Rahman" />
+    </div>
+  </main>
+  <!-- main section ends here -->
+</body>
+
 </html>

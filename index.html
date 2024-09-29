@@ -16,7 +16,7 @@
 
 <body class="bg-slate-900 text-gray-100 px-4 lg:px-0">
   <!-- nav section start here -->
-  <nav class="nav-container max-w-5xl mx-auto pt-4">
+  <nav class="nav-container max-w-5xl mx-auto pt-4 sticky top-0 z-10 ">
     <div class="navbar bg-slate-900 p-0">
       <div class="navbar-start">
         <div class="dropdown">
@@ -27,9 +27,9 @@
             </svg>
           </div>
           <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Portfolio</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Porojects</a></li>
             <li><a>Contact</a></li>
           </ul>
         </div>
@@ -39,9 +39,9 @@
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
-          <li><a>About</a></li>
-          <li><a>Portfolio</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Porojects</a></li>
           <li><a>Contact</a></li>
         </ul>
       </div>
@@ -52,8 +52,8 @@
   </nav>
   <!-- nav section ends here -->
   <!-- main section start here -->
-  <main class="main-container max-w-5xl mx-auto">
-    <div
+  <main id="home" class="main-container max-w-5xl mx-auto">
+    <div id="about"
       class="hero-container lg:flex lg:flex-row lg:justify-between flex flex-col items-center justify-center lg:gap-10">
       <div class="left-side">
         <h2 class="lg:text-3xl font-bold mt-20 text-2xl">
@@ -96,12 +96,92 @@
             <p class="text-xl font-normal">Nov 2023 - Jan 2024</p>
           </div>
           <div class="lg:w-64 lg:mr-20">
-            <img src="./images/nexttech.png" alt="">
+            <img class="rounded-sm" src="./images/nexttech.png" alt="">
           </div>
         </div>
       </div>
     </div>
     <!-- professional experience ends here -->
+    <!-- project section start here -->
+    <div id="project" class="projects-container mt-12 id">
+      <h1 class="text-2xl font-bold">Recent<span class="text-[#30bcec]"> Projects</span></h1>
+      <!-- project 1 -->
+      <div class="card bg-slate-800 shadow-xl mt-5 p-4">
+        <div class="flex lg:flex-row items-center lg:gap-10 justify-center flex-col">
+          <div class=" lg:w-1/2">
+            <img src="./images/noakhali.png" alt="">
+          </div>
+          <div class="card-body lg:w-1/2 px-1">
+            <h2 class="card-title text-2xl">Donate Bangladesh</h2>
+            <div class="flex gap-3">
+              <div class="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900">HTML</div>
+              <div class="rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900">CSS</div>
+              <div class="rounded-md px-2 py-1 text-xs font-semibold bg-lime-400 text-lime-900">Tailwind CSS</div>
+              <div class="rounded-md px-2 py-1 text-xs font-semibold bg-sky-400 text-sky-900">daisyUI</div>
+              <div class="rounded-md px-2 py-1 text-xs font-semibold bg-yellow-400 text-yellow-900">JavaScript</div>
+            </div>
+
+            <h2 class="text-xl font-normal mt-3">A multi-page web app built with HTML, CSS, and JavaScript to provide a
+              tech-driven donation platform. It
+              offers a simple and secure way for users to support various charitable causes.</h2>
+            <p class="text-xl font-normal mt-3">Project Link : <a
+                href="https://bit.ly/3TCWptt">https://bit.ly/3TCWptt</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- project 2 -->
+      <div class="card bg-slate-800 shadow-xl mt-5 p-4">
+        <div class="flex lg:flex-row items-center lg:gap-10 justify-center flex-col">
+          <div class=" lg:w-1/2">
+            <img src="./images/banner.png" alt="">
+          </div>
+          <div class="card-body lg:w-1/2 px-1">
+            <h2 class="card-title text-2xl">Renterio Construction</h2>
+            <div class="flex gap-3">
+              <div class="rounded-md px-2 py-1 text-xs font-semibold bg-sky-400 text-sky-900">HTML</div>
+              <div class="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900">CSS</div>
+              <div class="rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900"> Tailwind CSS
+              </div>
+              <div class="rounded-md px-2 py-1 text-xs font-semibold bg-lime-400 text-lime-900">daisyUI</div>
+            </div>
+
+            <h2 class="text-xl font-normal mt-3">A single-page web application built with HTML, CSS, and JavaScript to
+              showcase construction services and
+              projects with a clean, responsive design.</h2>
+            <p class="text-xl font-normal mt-3">Project Link : <a
+                href="https://bit.ly/3ZyKYqx">https://bit.ly/3ZyKYqx</a></p>
+          </div>
+        </div>
+      </div>
+      <!-- project 3 -->
+      <div class="card bg-slate-800 shadow-xl mt-5 p-4">
+        <div class="flex lg:flex-row items-center lg:gap-10 justify-center flex-col">
+          <div class=" lg:w-1/2">
+            <img class="rounded-lg" src="./images/logo.jpg" alt="">
+          </div>
+          <div class="card-body lg:w-1/2 px-1">
+            <h2 class="card-title text-2xl">Quantum Technology Bangladesh</h2>
+            <div class="flex gap-3">
+              <div class="rounded-md px-2 py-1 text-xs font-semibold bg-yellow-400 text-yellow-900">HTML</div>
+              <div class="rounded-md px-2 py-1 text-xs font-semibold bg-lime-400 text-lime-900">HTML5</div>
+              <div class="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900">CSS</div>
+              <div class="rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900">CSS3</div>
+              <div class="rounded-md px-2 py-1 text-xs font-semibold bg-sky-400 text-sky-900">Tailwind CSS</div>
+            </div>
+
+            <h2 class="text-xl font-normal mt-3">This is a single-page web application developed to showcase a
+              technology-driven e-commerce platform, built
+              using HTML and CSS for a clean and efficient design.</h2>
+            <p class="text-xl font-normal mt-3">Project Link : <a
+                href="https://bit.ly/3TCWptt">https://bit.ly/3TCWptt</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- project section ends here -->
     <!-- Educational section start here -->
     <div class="educational-container mt-12">
       <h1 class="text-2xl font-bold">Educational<span class="text-[#30bcec]"> Qualification</span></h1>
@@ -110,11 +190,10 @@
           <div class="h-[100px] w-[100px] lg:ml-20">
             <img src="./images/green university.png" alt="">
           </div>
-          <div class="card-body">
-            <p></p>
-            <h2 class="card-title">B.Sc. in Computer Science and Engineering</h2>
-            <h2 class="text-xl font-normal">Green University of Bangladesh</h2>
-            <p class="text-xl font-normal">2020 - 2024</p>
+          <div class="card-body lg:p-8 px-0">
+            <h2 class="card-title lg:text-xl text-lg ">B.Sc. in Computer Science and Engineering</h2>
+            <h2 class="lg:text-xl font-normal">Green University of Bangladesh</h2>
+            <p class="lg:text-xl font-normal">2020 - 2024</p>
           </div>
         </div>
       </div>
@@ -124,32 +203,29 @@
           <div class="h-[100px] w-[100px] lg:ml-20">
             <img src="./images/model college.png" alt="">
           </div>
-          <div class="card-body">
-            <p></p>
-            <h2 class="card-title">Higher Secondary Certificate Examination</h2>
-            <h2 class="text-xl font-normal">Rajshahi Govt. Model School and College</h2>
-            <p class="text-xl font-normal">2017 - 2019</p>
+          <div class="card-body lg:p-8 px-0">
+            <h2 class="card-title lg:text-xl text-lg">Higher Secondary Certificate Examination</h2>
+            <h2 class="lg:text-xl font-normal">Rajshahi Govt. Model School and College</h2>
+            <p class="lg:text-xl font-normal">2017 - 2019</p>
           </div>
         </div>
       </div>
 
       <div class="card bg-slate-800 shadow-xl mt-5 p-4">
-        <div class="flex lg:flex-row items-center lg:gap-20 justify-center flex-col mt-2">
-          <div class="h-[100px] w-[100px] lg:ml-20">
+        <div class="flex lg:flex-row lg:items-center lg:gap-20 justify-center flex-col mt-2">
+          <div class="h-[100px] w-[100px] lg:ml-20 mx-auto">
             <img src="./images/tm.png" alt="">
           </div>
-          <div class="card-body">
-            <p></p>
-            <h2 class="card-title">Secondary School Certificate</h2>
-            <h2 class="text-xl font-normal">T M Memorial Academy</h2>
-            <p class="text-xl font-normal">2015 - 2017</p>
+          <div class="card-body lg:p-8 px-0 ml-0">
+            <h2 class="card-title lg:text-xl text-lg">Secondary School Certificate</h2>
+            <h2 class="lg:text-xl font-normal">T M Memorial Academy</h2>
+            <p class="lg:text-xl font-normal">2015 - 2017</p>
           </div>
         </div>
       </div>
     </div>
     </div>
     <!-- Educational section ends here -->
-
 
 
 
